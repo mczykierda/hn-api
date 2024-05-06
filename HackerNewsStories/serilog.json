@@ -1,0 +1,23 @@
+{
+  "Serilog": {
+    "Using": [
+      "Serilog.Exceptions",
+      "Serilog",
+      "Serilog.Sinks.Console"
+    ],
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "Microsoft": "Warning",
+        "Microsoft.AspNetCore": "Warning",
+        "System": "Error"
+      }
+    },
+    "Enrich": [],
+    "WriteTo": [
+      {
+        "Name": "Console"
+      }
+    ]
+  }
+}
